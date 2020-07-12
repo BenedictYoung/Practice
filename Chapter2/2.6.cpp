@@ -7,10 +7,11 @@
 
 #include <iostream>
 #include <cstdio>
+#include <cmath>
 
 using namespace std;
 
-const int daytab[2][13]={
+const int dayTable[2][13]={
         {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
         {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
 };
@@ -21,7 +22,7 @@ bool IsLeapYear(int year) {
 
 int Number(int year, int month, int day) {
     int number = 0;
-    for (int i = 0; i < year; ++i) {
+    for (int i = 1; i < year; ++i) {
         if (IsLeapYear(i)) {
             number += 366;
         } else {
@@ -30,7 +31,7 @@ int Number(int year, int month, int day) {
     }
     int row = IsLeapYear(year);
     for (int j = 0; j < month; ++j){
-        number += daytab[row][j];
+        number += dayTable[row][j];
     }
     number += day;
     return number;
