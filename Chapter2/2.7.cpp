@@ -16,12 +16,12 @@ const int dayTable[2][13]={
 };
 
 string monthName[13] = {
-        "","January","February","March","April","May","June","July","August",
-        "September","October","November","December"
+        "", "January", "February", "March", "April", "May", "June", "July", 
+        "August", "September", "October", "November", "December"
 };
 
 string weekName[7] = {
-        "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
 };
 
 bool IsLeapYear(int year) {
