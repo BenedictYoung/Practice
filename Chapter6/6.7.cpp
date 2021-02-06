@@ -39,21 +39,17 @@ void Initial() {
 }
 
 int NumberOfFactor(int number) {
-    vector<int> exponent;
+    int answer = 1;
     for (int i = 0; i < prime.size() && prime[i] <= number; ++i) {
-        int current = 0;
+        int exponent = 0;
         while (number % prime[i] == 0) {
-            current++;
+            exponent++;
             number /= prime[i];
         }
-        exponent.push_back(current);
+        answer *= exponent + 1;
     }
     if (number > 1) {
-        exponent.push_back(1);
-    }
-    int answer = 1;
-    for (int i = 0; i < exponent.size(); ++i) {
-        answer *= exponent[i] + 1;
+         answer *= 2;
     }
     return answer;
 }
