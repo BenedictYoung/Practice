@@ -13,8 +13,3 @@
 **如出现书中代码与GitHub代码不一致的情况，以GitHub的代码为准。**
 
 祝各位考生考上自己心仪的院校！！！
-
-如果觉得项目不错，可以请我喝杯咖啡，谢谢大家的支持！！
-
-![image](https://github.com/BenedictYoung/Receive/blob/main/WeChat.png)
-![image](https://github.com/BenedictYoung/Receive/blob/main/Alipay.png)
