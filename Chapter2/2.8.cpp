@@ -1,7 +1,7 @@
 /*
 * 题目名称：日期类
 * 题目来源：北京理工大学复试上机题
-* 题目链接：http://t.cn/E9YZLbi
+* 题目链接：http://t.cn/E9RJUp4
 * 代码作者：杨泽邦(炉灰)
 */
 
@@ -26,7 +26,8 @@ int main() {
         int year, month, day;
         scanf("%d%d%d", &year, &month, &day);
         int row = IsLeapYear(year);
-        if (++day > dayTable[row][month]) {
+        day += 1;
+        if (day > dayTable[row][month]) {
             month++;
             day = 1;
         }
