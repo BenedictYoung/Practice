@@ -1,5 +1,5 @@
 /*
-* 题目名称：日期差值
+* 题目名称：Day of Week
 * 题目来源：上海交通大学复试上机题
 * 题目链接：http://t.cn/E9YZLbi
 * 代码作者：杨泽邦(炉灰)
@@ -17,12 +17,11 @@ const int dayTable[2][13]={
 };
 
 string monthName[13] = {
-        "","January","February","March","April","May","June","July","August",
-        "September","October","November","December"
+        "", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 };
 
 string weekName[7] = {
-        "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
 };
 
 bool IsLeapYear(int year) {
