@@ -1,5 +1,5 @@
 /*
-* 题目名称：路经打印
+* 题目名称：坠落的蚂蚁
 * 题目来源：北京大学复试上机题
 * 题目链接：http://t.cn/E9dhoRA
 * 代码作者：杨泽邦(炉灰)
@@ -39,10 +39,10 @@ int main() {
         }
         sort(ants, ants + n, Compare);
         for (int i = 0 ; i < n ; ++i) {
-            if (ants[i].position < position && ants[i].direction == 1 )  {
+            if (ants[i].position < position && ants[i].direction == 1) {
                 left.push_back(ants[i].position);
             }
-            if (ants[i].position > position && ants[i].direction == -1 )  {
+            if (ants[i].position > position && ants[i].direction == -1) {
                 right.push_back(ants[i].position);
             }
         }
