@@ -31,14 +31,14 @@ int main() {
         vector<int> left;
         vector<int> right;
         int position;
-        for (int i = 0 ; i < n ; ++i) {
+        for (int i = 0; i < n; ++i) {
             scanf("%d%d", &ants[i].position, &ants[i].direction);
             if (ants[i].direction == 0)  {
                 position = ants[i].position;
             }
         }
         sort(ants, ants + n, Compare);
-        for (int i = 0 ; i < n ; ++i) {
+        for (int i = 0; i < n; ++i) {
             if (ants[i].position < position && ants[i].direction == 1) {
                 left.push_back(ants[i].position);
             }
