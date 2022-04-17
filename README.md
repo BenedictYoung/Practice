@@ -15,8 +15,8 @@
 祝各位考生考上自己心仪的院校！！！
 
 题目名称与链接
-| 题目编号 |   题目名称   |                    题目链接                    |     参考代码 
-|:--------:|:-----------:|:------------------:|:-------------------------------------------:|:-------------------------------------------:| 
+| 题目编号 |   题目名称   |                    题目链接                    |     参考代码 | 
+|:--------:|:----------:|:-------------------------------------------:|:-------------------------------------------:| 
 | 习题2.1 | 与7无关的数（北京大学复试上机题）        | http://t.cn/E9lOOZQ | https://github.com/BenedictYoung/Practice/blob/master/Chapter2/2.1.cpp|
 | 习题2.2 | 百鸡问题（北京哈尔滨工业大学复试上机题） | http://t.cn/E9ldhru |  https://github.com/BenedictYoung/Practice/blob/master/Chapter2/2.2.cpp|
 | 习题2.3 | old bill（上海交通大学复试上机题）       | http://t.cn/E9jqijR | https://github.com/BenedictYoung/Practice/blob/master/Chapter2/2.3.cpp|
