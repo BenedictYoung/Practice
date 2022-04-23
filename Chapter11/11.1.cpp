@@ -12,28 +12,31 @@ using namespace std;
 
 const int MAXN = 30;
 
-int child[MAXN];
+int children[MAXN];
 
 int Generation(int x, int y) {
     int level;
+
     level = 0;
     int a = x;
-    while (child[a] != a) {
-        a = child[a];
+    while (children[a] != a) {
+        a = children[a];
         level++;
         if (a == y) {
             return level;
         }
     }
+
     level = 0;
     int b = y;
-    while (child[b] != b) {
-        b = child[b];
+    while (children[b] != b) {
+        b = children[b];
         level--;
         if (b == x) {
             return level;
         }
     }
+
     return 0;
 }
 
@@ -67,18 +70,22 @@ int main() {
     int n, m;
     while (scanf("%d%d", &n, &m) != EOF) {
         for (int i = 0; i < MAXN; ++i) {
-            child[i] = i;
+            children[i] = i;
         }
         for (int i = 0; i < n; ++i) {
-            string str;
-            cin >> str;
-            child[str[2] - 'A'] = str[0] - 'A';
-            child[str[1] - 'A'] = str[0] - 'A';
+            char child, father, mother;
+            cin >> child >> father >> mother;
+            if (father - 'A' != '-') {
+                children[father - 'A'] = child - 'A';
+            }
+            if (mother - 'A' != '-') {
+                children[mother - 'A'] = child - 'A';
+            }
         }
         for (int i = 0; i < m; ++i) {
-            string str;
-            cin >> str;
-            int level = Generation(str[0] - 'A', str[1] - 'A');
+            char guy1, guy2;
+            cin >> guy1 >> guy2;
+            int level = Generation(guy1 - 'A', guy2 - 'A');
             cout << Relationship(level) << endl;
         }
     }
